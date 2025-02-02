@@ -1,0 +1,29 @@
+html {
+  font-family: system-ui;
+  color-scheme: light dark;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  background: url("https://library.gxres.net/images/bg.webp") center/cover
+    no-repeat;
+}
+
+a {
+  color: rgb(59 130 246);
+  text-decoration-line: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("https://library.gxres.net/images/bg.webp") center/cover no-repeat;
+  }
+}
