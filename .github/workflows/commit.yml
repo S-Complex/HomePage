@@ -1,0 +1,23 @@
+name: New commit
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  AutoNotify:
+    name: Send message
+    runs-on: ubuntu-latest
+    steps:
+      - uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          to: ${{ secrets.TELEGRAM_TO }}
+          message: |
+            ${{ github.repository }} 有新的改动。
+
+            - 提交人: ${{ github.actor }}
+            - 提交信息: ${{ github.event.commits[0].message }}
+
+            注意：提交信息由 GitHub Actions 读取到的为准。
