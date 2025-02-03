@@ -5,8 +5,11 @@ export default defineNuxtConfig({
   app: {
     head: {
       charset: "utf-8",
-      viewport: "width=device-width, initial-scale=1.5",
+      viewport: "width=device-width, initial-scale=1.0",
       title: "Dongpu Ou - a.k.a. Restent Ou & SliverRiver",
+      htmlAttrs: {
+        lang: 'en'
+      },
       link: [
         {
           rel: "icon",

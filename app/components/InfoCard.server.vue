@@ -1,10 +1,15 @@
 <template>
   <div
-    class="m-6 rounded-md bg-white p-6 shadow-md md:col-span-2 space-y-3 dark:bg-slate-700"
+    rounded="lg"
+    bg="white dark:slate-700"
+    p="6"
+    m="md:y-6"
+    space="y-3"
+    shadow="md"
   >
-    <h1 class="text-2xl">Hi there 👋</h1>
+    <h1 text="2xl">Hi there 👋</h1>
     <p>This is Dongpu Ou, you may know me as Restent Ou & SliverRiver.</p>
-    <h2 class="text-xl">About me</h2>
+    <h2 text="xl">About me</h2>
     <p>
       Student, front-end developer and blogger from Guangxi, China. Now
       preparing for the National College Entrance Examination in 2025.
@@ -19,8 +24,8 @@
         >Nitro</NuxtLink
       >.
     </p>
-    <h2 class="text-xl">Skill set</h2>
-    <section class="flex flex-wrap gap-3">
+    <h2 text="xl">Skill set</h2>
+    <section flex="~ wrap" gap="3">
       <IconNodejs :width="40" :height="40" />
       <IconDeno :width="40" :height="40" />
       <IconJavaScript :width="40" :height="40" />
@@ -36,7 +41,7 @@
       <IconSvelte :width="40" :height="40" />
       <IconNitro :width="40" :height="40" />
     </section>
-    <h2 class="text-xl">Favorite</h2>
+    <h2 text="xl">Favorite</h2>
     <p>I love food, photography and gaming.</p>
     <p>
       Currently spending my free time gaming, my favorite games are Minecraft,
